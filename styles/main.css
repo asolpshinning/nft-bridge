@@ -1,0 +1,24 @@
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+.popup-content {
+  width:auto;
+  max-width:800px;
+}
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(9, 113, 51);
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}

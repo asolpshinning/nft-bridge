@@ -1,0 +1,42 @@
+env:
+  es6: true
+  node: true
+  browser: true
+  commonjs: true
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+parser: "@typescript-eslint/parser"
+parserOptions:
+  ecmaFeatures:
+    experimentalObjectRestSpread: true
+    experimentalDecorators: true
+    jsx: true
+  sourceType: module
+  project: "tsconfig.json"
+plugins:
+  - prettier
+  - react
+  - "@typescript-eslint/eslint-plugin"
+  - sort-imports-es6-autofix
+  - react-hooks
+rules:
+  prettier/prettier:
+    - error
+  react/jsx-uses-react: error
+  react/jsx-uses-vars: error
+  react/prop-types: off
+  react/display-name: off
+  react/no-deprecated: warn
+  eol-last: error
+  no-multiple-empty-lines: error
+  radix: error
+  eqeqeq: error
+  no-undef: 0        # https://github.com/eslint/typescript-eslint-parser/issues/416
+  no-unused-vars: 0  # https://github.com/eslint/typescript-eslint-parser/issues/457
+  sort-imports-es6-autofix/sort-imports-es6: [error, { "ignoreCase": true, "memberSyntaxSortOrder": ["none", "all", "single", "multiple"] }]
+  react-hooks/rules-of-hooks: "error"
+  react-hooks/exhaustive-deps: "error"
+  no-console: "error"
+globals:
+  process: readonly
