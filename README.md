@@ -2,7 +2,7 @@ This is ALGO-ETH BRIDGE developed on Algorand using smart contracts developed wi
 
 **Developed by**: [Sunday Akinbowale](https://github.com/asolpshinning), [Jake ChaseBuilt](https://github.com/jchaselubitz), and powered by [Cooperativ.io](https://github.com/cooperativ-labs)
 
-We will continue to develop this project after hackathon submission at this [Cooperative's Github Repo](https://github.com/cooperativ-labs/eth-algo-NFT-bridge)
+We will continue to develop this project after hackathon submission at this [Cooperativ's Github Repo](https://github.com/cooperativ-labs/eth-algo-NFT-bridge)
 
 
 ## Video Demo
