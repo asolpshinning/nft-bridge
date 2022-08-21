@@ -1,8 +1,8 @@
 This is ALGO-ETH BRIDGE developed on Algorand using smart contracts developed with [Reach](reach.sh) and solidity. It is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-**Developed by**: [Sunday Akinbowale](https://github.com/asolpshinning), [Jake ChaseBuilt](https://github.com/jchaselubitz), and powered by [Cooperativ.io](https://github.com/cooperativ-labs)
+**Developed by**: [Sunday Akinbowale](https://github.com/asolpshinning), [Jake Chase-Lubitz](https://github.com/jchaselubitz), and powered by [Cooperativ.io](https://github.com/cooperativ-labs)
 
-We will continue to develop this project after hackathon submission at this [Cooperativ's Github Repo](https://github.com/cooperativ-labs/eth-algo-NFT-bridge)
+We will continue to develop this project after hackathon submission at this [Cooperative's Github Repo](https://github.com/cooperativ-labs/eth-algo-NFT-bridge)
 
 
 ## Video Demo
@@ -28,7 +28,7 @@ We will continue to develop this project after hackathon submission at this [Coo
 
 - This application is written to work only on Algorand testnet and ETH Goerli testnet
 
-- If you like to test the live version of this app ([located here](https://nft-bridge.sundayakins.repl.co/)), you can mint your ERC-721 NFT using a deployable version of our NFT that we released via thirdWeb through [this link](https://thirdweb.com/0xFc63bAd66fB4f454378C404ae792CeE147b67AEf/ERC721), and then bridge into an Algorand NFT.
+- If you would like to test the live version of this app ([located here](https://nft-bridge.sundayakins.repl.co/)), you can mint your ERC-721 NFT using a deployable version of our NFT that we released via thirdWeb through [this link](https://thirdweb.com/0xFc63bAd66fB4f454378C404ae792CeE147b67AEf/ERC721), and then bridge into an Algorand NFT.
 
 - This application's front end only works for NFTs with metadata uploaded to IPFS. In other words, the url of either the ERC-721 NFT or Algorand NFT has to be an IPFS url. 
 
@@ -38,9 +38,9 @@ We will continue to develop this project after hackathon submission at this [Coo
 
 - According to ERC-721 standards, all NFTs minted by our **goerliMinter** (which we used to demonstrate this bridge) would have the same contract address but different token IDs (e.g 1,2,3 etc...)
 
-- This application can be used to bridge any Algorand NFT into ERC-721 NFT. However, our front end demonstrated in this repo would only show (ARC-3 standard) images derived from the metadata url. We need to later further improve the app to eventually be able to show image url for Algorand NFTs with ARC-69 standard
+- This application can be used to bridge any Algorand NFT into ERC-721 NFT. However, our frontend demonstrated in this repo would only show (ARC-3 standard) images derived from the metadata url. We need to later further improve the app to eventually be able to show image url for Algorand NFTs with ARC-69 standard
 
-- If you like to deploy this, you would need seed phrases and private keys in your `.env` file. YOu can find example file in `dotenv`
+- If you would like to deploy this, you will need seed phrases and private keys in your `.env` file. You can find example file in `dotenv`
 
 
 ## Limitations
@@ -89,7 +89,9 @@ The ALGO-ETH Bridge is made up of the following major parts:
     - `algoToEth.main.rsh` => this is the reach smart contract that lets the bridger locks Algorand NFT and the backend confirms this before minting ERC-721 NFT for the bridger.
 
 ## Run this Project
- Use
+ - 
+Explaining the architecture of the Bridge
+
 ```bash
 npm run dev
 # or
