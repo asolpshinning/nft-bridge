@@ -89,9 +89,7 @@ The ALGO-ETH Bridge is made up of the following major parts:
     - `algoToEth.main.rsh` => this is the reach smart contract that lets the bridger locks Algorand NFT and the backend confirms this before minting ERC-721 NFT for the bridger.
 
 ## Run this Project
- - 
-Explaining the architecture of the Bridge
-
+ Use
 ```bash
 npm run dev
 # or
