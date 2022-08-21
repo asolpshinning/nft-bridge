@@ -28,6 +28,8 @@ This is ALGO-ETH BRIDGE a [Next.js](https://nextjs.org/) project bootstrapped wi
 
 - This application can be used to bridge any Algorand NFT into ERC-721 NFT. However, our front end demonstrated in this repo would only show (ARC-3 standard) images derived from the metadata url. We need to later further improve the app to eventually be able to show image url for Algorand NFTs with ARC-69 standard
 
+- If you like to deploy this, you would need seed phrases and private keys in your `.env` file. YOu can find example file in `dotenv`
+
 
 ## Limitations
 
