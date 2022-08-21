@@ -118,9 +118,6 @@ const SwapForm: FC = () => {
                 count,
                 nftToBeBridgedAddress,
                 setButtonStep,
-                setNftImageUrl,
-                setNftUrl,
-                setMetaData,
                 setNftClaimId,
               })
             : bridgeAlgoToEth({

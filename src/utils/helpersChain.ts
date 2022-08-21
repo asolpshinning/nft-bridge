@@ -219,7 +219,6 @@ export const callAPI = async (
   const apis = ctc.a;
   call(async () => {
     let apiReturn;
-    ``;
     for (const x in apis) {
       if (x == apiName) {
         apiReturn = await apis[apiName](...apiArg);
