@@ -16,11 +16,22 @@ This is ALGO-ETH BRIDGE a [Next.js](https://nextjs.org/) project bootstrapped wi
 
 - This application is written to work only on Algorand testnet and ETH Goerli testnet
 
-- This application only works for NFTs with metadata uploaded to IPFS. In other words, the url of either the ERC-721 NFT or Algorand NFT has to be an IPFS url.
+- If you like to test the live version of this app ([located here](https://nft-bridge.sundayakins.repl.co/)), you can mint your ERC-721 NFT using a deployable version of our NFT that we released via thirdWeb through [this link](https://thirdweb.com/0xFc63bAd66fB4f454378C404ae792CeE147b67AEf/ERC721), and then bridge into an Algorand NFT.
+
+- This application's front end only works for NFTs with metadata uploaded to IPFS. In other words, the url of either the ERC-721 NFT or Algorand NFT has to be an IPFS url. 
 
 - This application will only bridge ERC-721 NFTs with ABIs similar to the Bridge Deployer's own. This means an entity or NFT Creator who would like to deploy this app would do it in such a way that it probably only works for the entity's or the Creator's ERC-721 NFTs. 
 
-- This application can be used to bridge any Algorand NFT (ARC3 and ARC69) to ERC-721 NFTs.
+- It is assumed that the bridge deployer who wants people to bridge NFTs from Algorand to Ethereum has a particular ERC-721 NFT contract that mints the ethereum NFT for clients, after locking Algorand NFT. For this app, the ethereum contract is referred to as **goerliMinter** and thirdWeb made it easy for us to compile the solidity code, and share our deployable contract link with you. If you like to easily deploy the same contract for your bridge, you can use this [link](https://thirdweb.com/contracts/deploy/QmfDwN1uX8Bztdyo4p65ApiCahA37UTpf5hPLnUgaDa5iZ).
+
+- According to ERC-721 standards, all NFTs minted by our **goerliMinter** (which we used to demonstrate this bridge) would have the same contract address but different token IDs (e.g 1,2,3 etc...)
+
+- This application can be used to bridge any Algorand NFT into ERC-721 NFT. However, our front end demonstrated in this repo would only show (ARC-3 standard) images derived from the metadata url. We need to later further improve the app to eventually be able to show image url for Algorand NFTs with ARC-53 standard
+
+
+## Limitations
+
+- The only limitation currently faced for this bridge has to do with myAlgo wallet. When claiming NFT on Algorand or locking NFT on Alogrand during a bridging process, the pop up shows up two times instead of one time when calling a contract function
 
 
 ## Getting Started
