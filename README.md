@@ -1,4 +1,16 @@
-This is ALGO-ETH BRIDGE a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is ALGO-ETH BRIDGE developed on Algorand using smart contracts developed with [Reach](reach.sh) and solidity. It is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+**Developed by**: [Sunday Akinbowale](https://github.com/asolpshinning), [Jake ChaseBuilt](https://github.com/jchaselubitz), and powered by [Cooperativ.io](https://github.com/cooperativ-labs)
+
+We will continue to develop this repo after hackathon submission at this [Cooperative's Github Repo](https://github.com/cooperativ-labs/eth-algo-NFT-bridge)
+
+
+## Video Demo
+[Here](https://vimeo.com/741640670/a1e41c5e9f)
+
+
+## Live App 
+[Here](https://nft-bridge.sundayakins.repl.co/)
 
 
 ## Definitions
@@ -39,7 +51,7 @@ This is ALGO-ETH BRIDGE a [Next.js](https://nextjs.org/) project bootstrapped wi
 ## Getting Started
 
 The ALGO-ETH Bridge is made up of the following major parts:
-- [The Backend](https://github.com/cooperativ-labs/eth-algo-NFT-bridge/tree/sunday1/pages/api)
+- [The Backend](https://github.com/asolpshinning/nft-bridge/tree/main/pages/api)
 
     - `bridgeToAlgo.js` => this is the API called by the front end (after ERC-721 NFt has been locked) when it is time to launch Algorand NFT, deploy an Algorand contract that receives the Algroand NFT to be claimed by the bridger. The bridger would claim the NFT in the front end after first opting into the Algorand NFT 
 
@@ -51,15 +63,15 @@ The ALGO-ETH Bridge is made up of the following major parts:
 
     - `mintEthNft.js` => this is a server function called by "finalAlgoBridgeStep.ts" to mint ERC-721 NFT
 
-- [Reach Compiled Javascript Files](https://github.com/cooperativ-labs/eth-algo-NFT-bridge/tree/sunday1/reachBackend)
+- [Reach Compiled Javascript Files](https://github.com/asolpshinning/nft-bridge/tree/main/reachBackend)
 
     - `algoToEth.main.mjs` (this is compiled from algoToEth.rsh). It is mainly for locking ALgorand NFT in a reach algorand smart contract, and the backend can view the contract to see whether the "bridger" has locked NFT in it before minting ERC-721 NFT. THe backend can also check this contract to see if the backend has previously noted that a specific bridge has been completed.
 
-    - `test.main.js` (this is compiled from bridge.rsh). This is mainly used in the front end  the bridger can use to claim Algorand NFT from the Algorand smart contract deployed by the backend, after a bridger locks ERC-721 NFT during a bridging process.
+    - `test.main.js` (this is compiled from test.rsh). This is mainly used in the front end  the bridger can use to claim Algorand NFT from the Algorand smart contract deployed by the backend, after a bridger locks ERC-721 NFT during a bridging process.
 
-    - `test.main.mjs` (this is compiled from bridge.rsh). This is the same Algorand contract as above (excpet it is a module extension). This is used by the backend to deploy an Algorand smart contract that the front end can use to claim an NFT
+    - `test.main.mjs` (this is compiled from test.rsh). This is the same Algorand contract as above (excpet it is a module extension). This is used by the backend to deploy an Algorand smart contract that the front end can use to claim an NFT
 
-- [ETH ABI Contracts and Functions](https://github.com/cooperativ-labs/eth-algo-NFT-bridge/tree/sunday1/ethContracts)
+- [ETH ABI Contracts and Functions](https://github.com/asolpshinning/nft-bridge/tree/main/ethContracts)
 
     - `erc721a.js` => these are functions and the minter address required to launch a web3 instance in the backend using the web3.js library
 
@@ -67,6 +79,14 @@ The ALGO-ETH Bridge is made up of the following major parts:
 
     - `nftAbi.json` => this is the example ABI of the ERC-721 NFT issued by the Bridge Deployer who is offering bridging services for people to move their NFTs from Ethereum to Algorand 
 
+    - `erc721.sol` => this is the solidity code for the ERC=721 NFT contract
+
+
+- [Reach Smart Contracts](https://github.com/asolpshinning/nft-bridge/tree/main/reachContracts)
+
+    - `test.rsh` => this is the reach smart contract that allows the bridger to claim Algorand NFT when bridging from Ethereum to Algorand
+
+    - `algoToEth.main.rsh` => this is the reach smart contract that lets the bridger locks Algorand NFT and the backend confirms this before minting ERC-721 NFT for the bridger.
 
 ## Run this Project
  - 
