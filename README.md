@@ -2,7 +2,7 @@ This is ALGO-ETH BRIDGE developed on Algorand using smart contracts developed wi
 
 **Developed by**: [Sunday Akinbowale](https://github.com/asolpshinning), [Jake Chase-Lubitz](https://github.com/jchaselubitz), and powered by [Cooperativ.io](https://github.com/cooperativ-labs)
 
-We will continue to develop this project after hackathon submission at this [Cooperative's Github Repo](https://github.com/cooperativ-labs/eth-algo-NFT-bridge)
+We will continue to develop this project after hackathon submission at this [Cooperativ's Github Repo](https://github.com/cooperativ-labs/eth-algo-NFT-bridge)
 
 
 ## Video Demo
@@ -86,7 +86,7 @@ The ALGO-ETH Bridge is made up of the following major parts:
 
     - `test.rsh` => this is the reach smart contract that allows the bridger to claim Algorand NFT when bridging from Ethereum to Algorand
 
-    - `algoToEth.main.rsh` => this is the reach smart contract that lets the bridger locks Algorand NFT and the backend confirms this before minting ERC-721 NFT for the bridger.
+    - `algoToEth.rsh` => this is the reach smart contract that lets the bridger locks Algorand NFT and the backend confirms this before minting ERC-721 NFT for the bridger.
 
 ## Run this Project
  - 
